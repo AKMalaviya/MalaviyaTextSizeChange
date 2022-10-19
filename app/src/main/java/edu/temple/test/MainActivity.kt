@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
+import androidx.lifecycle.ViewModel
 import androidx.lifecycle.lifecycleScope
 import kotlinx.coroutines.*
 import org.w3c.dom.Text
@@ -11,6 +12,7 @@ import org.w3c.dom.Text
 class MainActivity : AppCompatActivity(), SizeFragment.ValueChangeInterface {
 
     lateinit var textFragment: TextFragment
+    //lateinit var viewModel: ViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
